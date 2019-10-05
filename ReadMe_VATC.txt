@@ -1,0 +1,1 @@
+This package should be installed as SPATIALITE_DIR with ProjectTool

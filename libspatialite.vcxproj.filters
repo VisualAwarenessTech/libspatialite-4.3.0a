@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="gaiaaux">
+      <UniqueIdentifier>{08506dbe-9450-4ff6-9642-6063d5e96217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiaaux\Header Files">
+      <UniqueIdentifier>{23f46448-e7db-47a1-9a39-19f503b6d68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiaaux\Source Files">
+      <UniqueIdentifier>{3e164536-678f-4642-a744-7ae81136eb0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiageo">
+      <UniqueIdentifier>{967e3a18-ac4e-4876-95e5-2e5b2ce7672d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiageo\Source Files">
+      <UniqueIdentifier>{d45fd0b3-af9f-4662-af2a-54f2033f1279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiageo\Header Files">
+      <UniqueIdentifier>{a53e1bd4-4d77-41c7-9d2a-eea41586d3cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiaexif">
+      <UniqueIdentifier>{027fbc32-1e98-439e-a1b7-fa11449af284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiaexif\Header Files">
+      <UniqueIdentifier>{2601f470-f3c4-4e0f-b7fc-979a2f80ba46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gaiaexif\Source Files">
+      <UniqueIdentifier>{e8830e94-a49c-49dd-814b-c387394bd01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spatialite">
+      <UniqueIdentifier>{574e8b1c-8a45-4a63-aa01-f8d1ed9de910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spatialite\Source Files">
+      <UniqueIdentifier>{5b67a951-d4d7-46a2-9bda-7a0be1b39b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spatialite\Header Files">
+      <UniqueIdentifier>{48b376a5-38da-47a7-95cd-036af1ef8d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shapefiles">
+      <UniqueIdentifier>{190ca4b5-8915-4f79-9eba-830bcee55a72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shapefiles\Header Files">
+      <UniqueIdentifier>{d1a0fb61-a694-4063-bb9b-3bc243449c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shapefiles\Source Files">
+      <UniqueIdentifier>{b5e25441-052e-48e0-b400-b668e43cf0b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wfs">
+      <UniqueIdentifier>{829f7a43-1f5b-49ac-bc57-2e3f5706fc9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wfs\Header Files">
+      <UniqueIdentifier>{cee95d2f-58c2-4af1-96cf-974036ceab02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wfs\Source Files">
+      <UniqueIdentifier>{477d9ee9-50ff-457d-bacd-d79274d5f530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxf">
+      <UniqueIdentifier>{8a2201ef-9cbd-47f7-856a-72aa8d901c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxf\Header Files">
+      <UniqueIdentifier>{b4cea8c6-85df-4c58-9580-35bf012316cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxf\Source Files">
+      <UniqueIdentifier>{4b446ad6-0128-4955-bd38-1fc9a3cfb31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="md5">
+      <UniqueIdentifier>{4783ec77-45d6-4bc3-bcd2-437ba9ae818a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="md5\Header Files">
+      <UniqueIdentifier>{e602df0a-fd93-45aa-9af7-884eeea49f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="md5\Source Files">
+      <UniqueIdentifier>{1cb4ec00-cf40-41e5-9c0c-e35cca884193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="srsinit">
+      <UniqueIdentifier>{f4c03064-5efb-48e4-bbc2-3c99d3b4e797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="srsinit\Header Files">
+      <UniqueIdentifier>{40a9756d-08b8-406a-8ef5-bcd31b9158bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="srsinit\Source Files">
+      <UniqueIdentifier>{b05fc5ff-a41a-4aff-b503-479ff8f20005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="versioninfo">
+      <UniqueIdentifier>{14859467-5435-4246-a359-fece7bee0d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="versioninfo\Header Files">
+      <UniqueIdentifier>{e064770d-fae4-482d-bd02-4344af0000fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="versioninfo\Source Files">
+      <UniqueIdentifier>{871e735f-13e7-4a45-bf4b-8202622d6384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualtext">
+      <UniqueIdentifier>{9acb2f81-9e4e-4ee4-8678-68cd5b69fa8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualtext\Header Files">
+      <UniqueIdentifier>{ed6636ed-33a3-46cc-af07-74892f6898bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="virtualtext\Source Files">
+      <UniqueIdentifier>{4d9dca7f-a350-4c35-990e-3c0a669d7ce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c6d795ba-87a7-419f-acef-59386461faa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection_cache">
+      <UniqueIdentifier>{6bdf2661-7e05-4ccc-9d6e-90d9ec547b8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gaiaaux\gg_sqlaux.c">
+      <Filter>gaiaaux\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiaaux\gg_utf8.c">
+      <Filter>gaiaaux\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_advanced.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_endian.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_ewkt.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_geodesic.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_geoJSON.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_geometries.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_geoscvt.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_gml.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_kml.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_relations.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_shape.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_transform.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_vanuatu.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_wkb.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_wkt.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_xml.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiaexif\gaia_exif.c">
+      <Filter>gaiaexif\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\mbrcache.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\spatialite.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualdbf.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualnetwork.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualshape.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualspatialindex.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\statistics.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\metatables.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualXL.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\extra_tables.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualxpath.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\spatialite_init.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shapefiles\shapefiles.c">
+      <Filter>shapefiles\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shapefiles\validator.c">
+      <Filter>shapefiles\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wfs\wfs_in.c">
+      <Filter>wfs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dxf\dxf_parser.c">
+      <Filter>dxf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dxf\dxf_writer.c">
+      <Filter>dxf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dxf\dxf_loader.c">
+      <Filter>dxf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dxf\dxf_load_distinct.c">
+      <Filter>dxf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dxf\dxf_load_mixed.c">
+      <Filter>dxf\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\md5\md5.c">
+      <Filter>md5\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\md5\gaia_md5.c">
+      <Filter>md5\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_00.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_01.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_02.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_03.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_04.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_05.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_06.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_07.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_08.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_09.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_10.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_11.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_12.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_13.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_14.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_15.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_16.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_17.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_18.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_19.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_20.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_21.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_22.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_23.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_24.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_25.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_26.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_27.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_28.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_29.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_30.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_31.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_32.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_33.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_34.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_35.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_36.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_37.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_38.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_39.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_40.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_extra.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_prussian.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\srs_init.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_wgs84_00.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_wgs84_01.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\versioninfo\version.c">
+      <Filter>versioninfo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\virtualtext\virtualtext.c">
+      <Filter>virtualtext\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualfdo.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_voronoj.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_matrix.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_relations_ext.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connection_cache\alloc_cache.c">
+      <Filter>connection_cache</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualbbox.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\se_helpers.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\srid_aux.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\virtualelementary.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spatialite\table_cloner.c">
+      <Filter>spatialite\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_41.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_42.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_43.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_44.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_45.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srsinit\epsg_inlined_46.c">
+      <Filter>srsinit\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gaiageo\gg_extras.c">
+      <Filter>gaiageo\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\dxf\dxf_private.h">
+      <Filter>dxf\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\md5\md5.h">
+      <Filter>md5\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\headers\spatialite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\headers\spatialite_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

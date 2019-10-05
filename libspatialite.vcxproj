@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Debug|Win32">
+      <Configuration>vs2010_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Debug|x64">
+      <Configuration>vs2010_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Release|Win32">
+      <Configuration>vs2010_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Release|x64">
+      <Configuration>vs2010_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Debug|Win32">
+      <Configuration>vs2012_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Debug|x64">
+      <Configuration>vs2012_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Release|Win32">
+      <Configuration>vs2012_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Release|x64">
+      <Configuration>vs2012_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Debug|Win32">
+      <Configuration>vs2015_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Debug|x64">
+      <Configuration>vs2015_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Release|Win32">
+      <Configuration>vs2015_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Release|x64">
+      <Configuration>vs2015_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|Win32">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|Win32">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BA86E50A-9A46-4678-B790-98AEA8B82CE7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libspatialite</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1700;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSPATIALITE_EXPORTS;DLL_EXPORT;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;MSVC_VER=1600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;.\src\headers;..\$(PROJ_DIR)\src;..\$(GEOS_DIR)\include;..\$(GEOS_DIR)\msvc\include;..\$(GEOS_DIR)\msvc\capi;..\$(ICONV_DIR)\source\include;..\$(ICONV_DIR)\source\lib;..\$(SQLITE3_DIR);..\$(FREEXL_DIR)\headers;..\$(ZLIB_DIR);..\$(LIBXML2_DIR)\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\$(PROJ_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(GEOS_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(FREEXL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ICONV_DIR)\MSVC11\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(SQLITE3_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\$(LIBXML2_DIR)\win32\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Proj.lib;geos_c.lib;freexl.lib;libiconv_static.lib;sqlite3.lib;zlib.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\connection_cache\alloc_cache.c" />
+    <ClCompile Include="src\dxf\dxf_loader.c" />
+    <ClCompile Include="src\dxf\dxf_load_distinct.c" />
+    <ClCompile Include="src\dxf\dxf_load_mixed.c" />
+    <ClCompile Include="src\dxf\dxf_parser.c" />
+    <ClCompile Include="src\dxf\dxf_writer.c" />
+    <ClCompile Include="src\gaiaaux\gg_sqlaux.c" />
+    <ClCompile Include="src\gaiaaux\gg_utf8.c" />
+    <ClCompile Include="src\gaiaexif\gaia_exif.c" />
+    <ClCompile Include="src\gaiageo\gg_advanced.c" />
+    <ClCompile Include="src\gaiageo\gg_endian.c" />
+    <ClCompile Include="src\gaiageo\gg_ewkt.c" />
+    <ClCompile Include="src\gaiageo\gg_extras.c" />
+    <ClCompile Include="src\gaiageo\gg_geodesic.c" />
+    <ClCompile Include="src\gaiageo\gg_geoJSON.c" />
+    <ClCompile Include="src\gaiageo\gg_geometries.c" />
+    <ClCompile Include="src\gaiageo\gg_geoscvt.c" />
+    <ClCompile Include="src\gaiageo\gg_gml.c" />
+    <ClCompile Include="src\gaiageo\gg_kml.c" />
+    <ClCompile Include="src\gaiageo\gg_matrix.c" />
+    <ClCompile Include="src\gaiageo\gg_relations.c" />
+    <ClCompile Include="src\gaiageo\gg_relations_ext.c" />
+    <ClCompile Include="src\gaiageo\gg_shape.c" />
+    <ClCompile Include="src\gaiageo\gg_transform.c" />
+    <ClCompile Include="src\gaiageo\gg_vanuatu.c" />
+    <ClCompile Include="src\gaiageo\gg_voronoj.c" />
+    <ClCompile Include="src\gaiageo\gg_wkb.c" />
+    <ClCompile Include="src\gaiageo\gg_wkt.c" />
+    <ClCompile Include="src\gaiageo\gg_xml.c" />
+    <ClCompile Include="src\md5\gaia_md5.c" />
+    <ClCompile Include="src\md5\md5.c" />
+    <ClCompile Include="src\shapefiles\shapefiles.c" />
+    <ClCompile Include="src\shapefiles\validator.c" />
+    <ClCompile Include="src\spatialite\extra_tables.c" />
+    <ClCompile Include="src\spatialite\mbrcache.c" />
+    <ClCompile Include="src\spatialite\metatables.c" />
+    <ClCompile Include="src\spatialite\se_helpers.c" />
+    <ClCompile Include="src\spatialite\spatialite.c" />
+    <ClCompile Include="src\spatialite\spatialite_init.c" />
+    <ClCompile Include="src\spatialite\srid_aux.c" />
+    <ClCompile Include="src\spatialite\statistics.c" />
+    <ClCompile Include="src\spatialite\table_cloner.c" />
+    <ClCompile Include="src\spatialite\virtualbbox.c" />
+    <ClCompile Include="src\spatialite\virtualdbf.c" />
+    <ClCompile Include="src\spatialite\virtualelementary.c" />
+    <ClCompile Include="src\spatialite\virtualfdo.c" />
+    <ClCompile Include="src\spatialite\virtualnetwork.c" />
+    <ClCompile Include="src\spatialite\virtualshape.c" />
+    <ClCompile Include="src\spatialite\virtualspatialindex.c" />
+    <ClCompile Include="src\spatialite\virtualXL.c" />
+    <ClCompile Include="src\spatialite\virtualxpath.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_00.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_01.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_02.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_03.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_04.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_05.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_06.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_07.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_08.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_09.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_10.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_11.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_12.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_13.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_14.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_15.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_16.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_17.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_18.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_19.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_20.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_21.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_22.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_23.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_24.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_25.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_26.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_27.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_28.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_29.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_30.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_31.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_32.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_33.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_34.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_35.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_36.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_37.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_38.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_39.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_40.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_41.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_42.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_43.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_44.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_45.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_46.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_extra.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_prussian.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_wgs84_00.c" />
+    <ClCompile Include="src\srsinit\epsg_inlined_wgs84_01.c" />
+    <ClCompile Include="src\srsinit\srs_init.c" />
+    <ClCompile Include="src\versioninfo\version.c" />
+    <ClCompile Include="src\virtualtext\virtualtext.c" />
+    <ClCompile Include="src\wfs\wfs_in.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\dxf\dxf_private.h" />
+    <ClInclude Include="src\headers\spatialite.h" />
+    <ClInclude Include="src\headers\spatialite_private.h" />
+    <ClInclude Include="src\md5\md5.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
