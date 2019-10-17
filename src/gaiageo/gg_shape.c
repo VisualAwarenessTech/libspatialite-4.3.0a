@@ -66,7 +66,12 @@ the terms of any one of the MPL, the GPL or the LGPL.
 #ifdef _MSC_VER
 /* <localcharset.h> isn't supported on OSGeo4W */
 /* applying a tricky workaround to fix this issue */
-extern const char *locale_charset (void);
+extern const char *locale_charset(void)
+{
+	static char buf[13];
+	sprintf_s(buf, 13, "CP%u", GetACP());
+	return buf;
+};
 #else /* sane Windows - not OSGeo4W */
 #include <localcharset.h>
 #endif /* end localcharset */
